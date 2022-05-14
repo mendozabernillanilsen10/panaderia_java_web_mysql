@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <servlet>
+        <servlet-name>ControladorAlm</servlet-name>
+        <servlet-class>Controladores.ControladorAlm</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ControladorP</servlet-name>
+        <servlet-class>Controladores.ControladorP</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ControladorProduc</servlet-name>
+        <servlet-class>Controladores.ControladorProduc</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ControladorAlm</servlet-name>
+        <url-pattern>/ControladorAlm</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControladorP</servlet-name>
+        <url-pattern>/ControladorP</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControladorProduc</servlet-name>
+        <url-pattern>/ControladorProduc</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+        
+        
+    </session-config>
+</web-app>
